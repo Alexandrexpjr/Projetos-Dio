@@ -94,19 +94,19 @@ header {
   color: white;
 }
 
-/* Filmes Populares */
+/* Jogos Populares, Criaturas Populares */
 
-#popular-list {
+#popular-list, #popular-creatures-list {
   display: flex;
-  justify-content: space-evenly;
   list-style: none;
 }
 
-#popular-list img {
+#popular-list img, #popular-creatures-list img {
   width: 100%;
+  margin-bottom: 15px;
 }
 
-.popular-map-card {
+.popular-map-card, .popular-creature-card {
   text-align: center;
   transition: all 0.15s;
   margin: 20px 0;
@@ -125,4 +125,20 @@ header {
 
 .popular-map-card:hover {
   transform: scale(1.1);
+}
+
+/* Criaturas populares */
+
+#popular-creatures-list {
+  align-items: baseline;
+}
+
+.popular-creature-card {
+  text-align: center;
+  transition: all 0.15s;
+  margin: 20px 0;
+}
+
+.popular-creature-card:hover {
+  transform: scale(1.3);
 }
