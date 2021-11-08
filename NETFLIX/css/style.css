@@ -136,9 +136,22 @@ header {
 .popular-creature-card {
   text-align: center;
   transition: all 0.15s;
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 .popular-creature-card:hover {
   transform: scale(1.3);
+}
+
+@media screen and (max-width: 900px) {
+  .highlight {
+    background-size: unset;
+    background-position: center center;
+  }
+  .highlight-content {
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    text-shadow: 3px 3px 2px rgba(150, 150, 150, 1);
+  }
 }
